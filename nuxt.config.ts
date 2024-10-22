@@ -5,7 +5,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
-    '@primevue/nuxt-module'
+    '@primevue/nuxt-module',
+    '@nuxt/image',
+    '@nuxt/content'
   ],
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
