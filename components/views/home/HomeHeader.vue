@@ -48,7 +48,7 @@
   const leftContent = ref(null)
   const rightContent = ref(null)
   
-  const { data: headerContent } = await useAsyncData('headerHome', () => queryContent('views/home/header').findOne())
+  const { data: headerContent } = await useAsyncData('homeHeader', () => queryContent('views/home/header').findOne())
   
   onMounted(() => {
     gsap.from(leftContent.value, {
