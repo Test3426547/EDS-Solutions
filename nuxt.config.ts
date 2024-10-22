@@ -3,7 +3,6 @@ import Aura from '@primevue/themes/aura';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@supabase/supabase-js',
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@primevue/nuxt-module'
@@ -23,4 +22,10 @@ export default defineNuxtConfig({
     }
   },
   css: ['~/assets/css/tailwind.css'],
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_KEY
+    }
+  }
 })
