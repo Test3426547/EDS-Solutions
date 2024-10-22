@@ -10,7 +10,6 @@
       </svg>
       <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-shrink-0 lg:pt-8" ref="leftContent">
-          <NuxtImg :src="headerContent.logo" alt="EDS Solutions" class="h-11" />
           <div class="mt-24 sm:mt-32 lg:mt-16">
             <a :href="headerContent.tagline.link" class="inline-flex space-x-6">
               <span class="rounded-full bg-emerald-600/10 px-3 py-1 text-sm font-semibold leading-6 text-emerald-600 ring-1 ring-inset ring-emerald-600/10">{{ headerContent.tagline.text }}</span>
